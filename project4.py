@@ -32,6 +32,8 @@ if __name__ == "__main__":
     En esta parte se esta realizando la comparacion de cada documento, para obtener las distancias entre
     el uno y el otro, al final estos metodos me generan una matriz, la cual sera analizada por KMeans
     para asignar a cada documento en un cluster diferente.
+    Esta parte del codigo fue tomada de:
+    https://github.com/apache/spark/blob/master/examples/src/main/python/mllib/tf_idf_example.py
     '''
     hashingTF = HashingTF()
     tf = hashingTF.transform(list2WordDocuments)
