@@ -11,7 +11,7 @@
 
 ## Instalaciones
 
-Para este proyecto no se realizaron intalaciones debido a que el entorno en que estabamos trabajando ya contaba con todo instalado. Sin embargo, para ejecutar el proyecto es necesario contar con el framework de spark.
+Para este proyecto no se realizaron instalaciones debido a que el entorno en que estábamos trabajando ya contaba con todo instalado. Sin embargo, para ejecutar el proyecto es necesario contar con el Framework de spark.
 
 En el siguiente link se puede encontrar los pasos a seguir para la instalación de spark. [install](https://gist.github.com/darcyliu/d47edccb923b0f03280a4cf8b66227c1)
 
