@@ -11,6 +11,11 @@
 
 ## Instalaciones
 
+Para este proyecto no se realizaron intalaciones debido a que el entorno en que estabamos trabajando ya contaba con todo instalado. Sin embargo, para ejecutar el proyecto es necesario contar con el framework de spark.
+
+En el siguiente link se puede encontrar los pasos a seguir para la instalación de spark. [install](https://gist.github.com/darcyliu/d47edccb923b0f03280a4cf8b66227c1)
+
+
 
 ## Ejecución
   Para la ejecución de este proyecto se tiene dos posibilidades, pero necesariamente se debe de correr en un cluster que cuente con el framework de spark, para poder tener acceso a los datasets del cluster de hadoop. la primera posibilidad de ejecución es correrlo localmente con el siguiente comando.
