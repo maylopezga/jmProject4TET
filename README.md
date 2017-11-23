@@ -15,7 +15,7 @@
 ## Ejecución
   Para la ejecución de este proyecto se tiene dos posibilidades, pero necesariamente se debe de correr en un cluster que cuente con el framework de spark, para poder tener acceso a los datasets del cluster de hadoop. la primera posibilidad de ejecución es correrlo localmente con el siguiente comando.
   ````
-  spark-submmit name-archivo.py
+  spark-submit name-archivo.py
   ````
   con este comando el proceso se correrá localmente, pero de igual forma los datos quedaran guardados en el cluster de hadoop, aunque no quedara registro de este en hadoop.
   La otra manera es ejecutar este en el cluster de hadoop, para poder realizar esto es necesario correr el programa con yarn, el comando para esta ejecución es la siguiente.
