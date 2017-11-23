@@ -24,4 +24,16 @@
   spark-submit --master yarn --deploy-mode cluster --executor-memory 2G --num-executors 4 name-archivo.py
   ````
   con este comando se correrá en el cluster de hadoop, y su registro quedara allí, aunque en este lugar es necesario esperar en ocasiones mucho, ya que en primera parte el programa se pondrá en cola, y luego se ejecutara apenas terminen los que estén corriendo, y los que estén por delante de mí.
+
+
 ## Funcionalidad del código
+
+La principal funcionalidad de este código consiste en minería de textos, lo cual es relacionar un documento con otros que sean parecidos, o hablen del mismo tema, esto se está haciendo con una métrica de similaridad, para la cual fue necesaria la implementación de algoritmos como HashingTF e IDF los cuales me devuelven una matriz donde se encuentran las distancias que hay entre los documentos. Dichos algoritmos trabajan de la siguiente manera:
+
+![IDF](/idf.png)
+
+![TF](/tfidf.png)
+
+Donde t con las palabras que contienen los documentos y d con los documentos.
+
+Después de obtener la matriz se necesita un algoritmo de agrupamiento para lo cual se utiliza el kmeans que proviene de una biblioteca de Python, este algoritmo nos devolverá un objeto de tipo KMeansModel. A este objeto es necesario aplicarle un método llamado predict, el cual nos devolverá un arreglo donde se encuentran divididos los clúster, con los cuales ya se podrían hacer recomendaciones de documentos que tiendan a hablar del mismo tema.
